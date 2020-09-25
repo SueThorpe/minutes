@@ -1,0 +1,13 @@
+name: Trigger website build
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Dispatch generate minutes
+        uses: peter-evans/repository-dispatch@v1
+          with:
+            token: ${{ secrets.ACCESS_TOKEN }}
+            event-type: minutes
