@@ -8,6 +8,6 @@ jobs:
     steps:
       - name: Dispatch generate minutes
         uses: peter-evans/repository-dispatch@v1
-          with:
-            token: ${{ secrets.ACCESS_TOKEN }}
-            event-type: minutes
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          event-type: minutes
