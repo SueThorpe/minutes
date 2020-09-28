@@ -10,5 +10,5 @@ jobs:
         uses: benc-uk/workflow-dispatch@v1
         with:
           workflow: Generate minutes list
-          repo: haresfield-pc/minutes
+          repo: haresfield-pc/website
           token: ${{ secrets.ACCESS_TOKEN }}
