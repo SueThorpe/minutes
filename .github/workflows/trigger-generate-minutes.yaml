@@ -7,7 +7,8 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Dispatch generate minutes
-        uses: peter-evans/repository-dispatch@v1
+        uses: benc-uk/workflow-dispatch@v1
         with:
+          workflow: Generate minutes list
+          repo: haresfield-pc/minutes
           token: ${{ secrets.ACCESS_TOKEN }}
-          event-type: minutes
